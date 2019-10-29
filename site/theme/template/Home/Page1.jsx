@@ -6,7 +6,7 @@ export default class Page1 extends React.PureComponent {
   render() {
     return (
       <div>
-        Page1
+        Page1000000
       </div>
     )
   }
