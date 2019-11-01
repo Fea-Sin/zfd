@@ -28,8 +28,8 @@ module.exports = {
   hash: true,
   source: {
     components: './components',
-    // docs: './docs',
-    // changelog: ['CHANGELOG.zh-CN.md', 'CHANGELOG.en-US.md'],
+    docs: './docs',
+    changelog: ['CHANGELOG.zh-CN.md', 'CHANGELOG.en-US.md'],
   },
   theme: './site/theme',
   htmlTemplace: './site/theme/static/template.html',
