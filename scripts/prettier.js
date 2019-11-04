@@ -33,6 +33,7 @@ if (program.pre) {
     '**/components/style/color/**',
     '**/dist/**',
     '_site/**',
+    '**/style/color/*.less',
   ];
 
   // get all ts, js, less files
@@ -43,6 +44,7 @@ if (program.pre) {
     files = files.concat(matchFiles);
   });
 }
+console.log('这里是所有需要格式化的文件', files)
 if (!files.length) {
   return;
 }
