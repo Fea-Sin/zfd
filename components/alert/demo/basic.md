@@ -16,6 +16,7 @@ The simplest usage for short messages.
 ````jsx
 import { Alert } from 'antd';
 
+
 ReactDOM.render(
   <Alert message="Success Text" type="success" />,
   mountNode
