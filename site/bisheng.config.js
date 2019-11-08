@@ -8,9 +8,9 @@ const usePreact = process.env.REACT_ENV === 'preact';
 function alertBabelConfig(rules) {
   rules.forEach(rule => {
     if (rule.loader && rule.loader === 'babel-loader') {
-      if (rule.options.plugins.indexOf(replaceLib === -1) {
+      if (rule.options.plugins.indexOf(replaceLib) === -1) {
         rule.options.plugins.push(replaceLib);
-      })
+      }
       // eslint-disable-next-line
       rule.options.plugins = rule.options.filter(
         plugin => !plugin.indexOf || plugin.indexOf('babel-plugin-add-module-exports') === -1,

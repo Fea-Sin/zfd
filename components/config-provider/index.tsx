@@ -32,7 +32,7 @@ export interface ConfigProviderProps {
   prefixCls?: string;
   children?: React.ReactNode;
   renderEmpty?: RenderEmptyHandler;
-  csp: CSPConfig;
+  csp?: CSPConfig;
   autoInsertSpaceInButton?: boolean;
 }
 

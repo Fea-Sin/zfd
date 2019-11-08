@@ -1,6 +1,6 @@
 // import * as React from 'react';
 
-// export type ThemeType = 'filled' | 'outlined' | 'twoTone';
+export type ThemeType = 'filled' | 'outlined' | 'twoTone';
 
 // export interface IconProps {
 
