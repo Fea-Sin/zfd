@@ -1,5 +1,9 @@
 declare module '*.svg';
 
+declare module 'documnet';
+
+declare module 'unstable_ChangeDefaultThemeOfIcons';
+
 declare module 'rc-calendar*';
 
 declare module 'rc-time-picker*';
