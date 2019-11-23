@@ -17,4 +17,9 @@ export default {
   Icon: {
     icon: 'icon',
   },
+  Modal: {
+    okText: 'OK',
+    cancelText: 'Cancel',
+    justOkText: 'OK',
+  },
 };
