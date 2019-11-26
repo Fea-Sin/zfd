@@ -104,7 +104,8 @@ class Footer extends React.Component {
     const isZhCN = intl.locale === 'zh-CN';
     return (
       <footer id="footer">
-        <div className="footer-wrap">
+        <div>footer</div>
+        {/* <div className="footer-wrap">
           <Row gutter={16}>
             <Col md={6} sm={24} xs={24}>
               <div className="footer-center">
@@ -401,7 +402,7 @@ class Footer extends React.Component {
           <a target="_blank" rel="noopener noreferrer" href="https://xtech.antfin.com">
             <FormattedMessage id="app.footer.company" />
           </a>
-        </div>
+        </div> */}
       </footer>
     );
   }

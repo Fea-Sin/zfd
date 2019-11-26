@@ -25,15 +25,16 @@ class Banner extends React.PureComponent {
   }
 
   render() {
-    const { className, isMobile } = this.props;
-    const {
-      intl: { locale },
-    } = this.context;
-    const isZhCN = locale === 'zh-CN';
+    // const { className, isMobile } = this.props;
+    // const {
+    //   intl: { locale },
+    // } = this.context;
+    // const isZhCN = locale === 'zh-CN';
 
     return (
       <div className="home-page-wrapper banner-wrapper" id="banner">
-        <div className="banner-bg-wrapper">
+        <div>banner000004444444</div>
+        {/* <div className="banner-bg-wrapper">
           <svg width="400px" height="576px" viewBox="0 0 400 576" fill="none">
             <TweenOne component="g" animation={[{ opacity: 0, type: 'from' }, { ...loop, y: 15 }]}>
               <ellipse cx="100" cy="100" rx="6" ry="6" stroke="#2F54EB" strokeWidth="1.6" />
@@ -51,8 +52,8 @@ class Banner extends React.PureComponent {
             className="banner-bg"
             animation={{ playScale: [1, 1.5], rotate: 0 }}
           />
-        </div>
-        <QueueAnim className={`${className} page`} type="alpha" delay={150}>
+        </div> */}
+        {/* <QueueAnim className={`${className} page`} type="alpha" delay={150}>
           {isMobile && (
             <div className="img-wrapper" key="image">
               <BannerImage />
@@ -98,7 +99,7 @@ class Banner extends React.PureComponent {
               />
             </div>
           )}
-        </QueueAnim>
+        </QueueAnim> */}
       </div>      
     );
   }
