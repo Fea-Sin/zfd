@@ -115,7 +115,7 @@ export default class Layout extends React.Component {
       <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
         <LocaleProvider locale={appLocale.locale === 'zh-CN' ? zhCN : null}>
           <div className="page-wrapper">
-            <Header {...restProps} />
+            {/* <Header {...restProps} /> */}
             {children}
           </div>
         </LocaleProvider>

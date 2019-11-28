@@ -68,12 +68,13 @@ class Home extends React.Component {
   render() {
     const { isMobile, intl } = this.context;
     const childProps = { ...this.props, isMobile, locale: intl.locale }
+    console.log('传入props', childProps)
 
     return (
       <DocumentTitle title={`Zf Design - ${intl.formatMessage({ id: 'app.home.slogan' })}`}>
         <>
           <style dangerouslySetInnerHTML={{ __html: getStyle() }} /> {/* eslint-disable-line */}
-          <Banner {...childProps} />
+          {/* <Banner {...childProps} /> */}
           <Page1 {...childProps} />
           <Page2 {...childProps} />
           <Page3 {...childProps} />
