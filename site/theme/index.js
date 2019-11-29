@@ -1,5 +1,4 @@
 const path = require('path');
-
 const homeTmpl = './template/Home/index';
 const contentTmpl = './template/Content/index';
 const redirectTmpl = './template/Redirect';
@@ -71,6 +70,10 @@ module.exports = {
         path: 'docs/pattern/:children',
         component: redirectTmpl,
       },
+      {
+        path: 'docs/react/:children',
+        component: contentTmpl,
+      },      
       {
         path: 'changelog',
         component: contentTmpl,

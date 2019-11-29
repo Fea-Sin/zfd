@@ -3,10 +3,25 @@ import PropTypes from 'prop-types';
 import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import { Select, Menu, Row, Col, Icon, Popover, Input, Button } from 'antd';
+import { Icon } from 'antd';
 import Santa from './Santa';
 import * as utils from '../utils';
 import { version as antdVersion } from '../../../../package.json';
+import Select from 'antd/es/select';
+import 'antd/es/select/style';
+import Menu from 'antd/es/menu';
+import 'antd/es/menu/style';
+import Row from 'antd/es/row';
+import 'antd/es/row/style';
+import Col from 'antd/es/col';
+import 'antd/es/col/style';
+import Popover from 'antd/es/popover';
+import 'antd/es/popover/style';
+import Input from 'antd/es/input';
+import 'antd/es/input/style';
+import Button from 'antd/es/button';
+import 'antd/es/button/style';
+
 
 const { Option } = Select;
 
@@ -230,7 +245,6 @@ export default class Header extends React.Component {
     const searchPlaceholder = locale === 'zh-CN' ? '在 ant.design 中搜索' : 'Search in ant.design';
     return (
       <header id="header" className={headerClassName}>
-        <div>header</div>
         {isMobile && (
           <Popover
             overlayClassName="popover-menu"

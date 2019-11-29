@@ -2,7 +2,7 @@
 import React from 'react';
 import ScrollAnim from 'rc-scroll-anim';
 
-const ScrollParallax = ScrollAnim.Parallax
+const ScrollParallax = ScrollAnim.Parallax;
 
 function ParallaxG(props) {
   return <ScrollParallax component="g" {...props} />;

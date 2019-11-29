@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
-import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
+import ScrollAnim from 'rc-scroll-anim';
 import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
 import GitHubButton from 'react-github-button';
 import BannerImage from './BannerImage';
 import * as utils from '../utils';
+import Button from 'antd/es/button';
+import 'antd/es/button/style';
+
+const ScrollParallax = ScrollAnim.Parallax;
 
 const loop = {
   duration: 3000,
@@ -16,25 +20,29 @@ const loop = {
 }
 
 class Banner extends React.PureComponent {
-  static contextType = {
-    intl: PropTypes.object.isRequired,
-  }
+  // static contextType = {
+  //   intl: PropTypes.object.isRequired,
+  // }
 
   static propTypes = {
-    className: 'banner',
+    className: PropTypes.string,
   }
+
+  static defaultProps = {
+    className: 'banner',
+  } 
 
   render() {
     const { className, isMobile } = this.props;
-    // const {
-    //   intl: { locale },
-    // } = this.context;
-    // const isZhCN = locale === 'zh-CN';
+    const {
+      intl: { locale },
+    } = this.props;
+    const isZhCN = locale === 'zh-CN';
+    console.log('this context', this.context)
 
     return (
       <div className="home-page-wrapper banner-wrapper" id="banner">
-        <div className={`${className} page`}>banner000004444444</div>
-        {/* <div className="banner-bg-wrapper">
+        <div className="banner-bg-wrapper">
           <svg width="400px" height="576px" viewBox="0 0 400 576" fill="none">
             <TweenOne component="g" animation={[{ opacity: 0, type: 'from' }, { ...loop, y: 15 }]}>
               <ellipse cx="100" cy="100" rx="6" ry="6" stroke="#2F54EB" strokeWidth="1.6" />
@@ -52,8 +60,8 @@ class Banner extends React.PureComponent {
             className="banner-bg"
             animation={{ playScale: [1, 1.5], rotate: 0 }}
           />
-        </div> */}
-        {/* <QueueAnim className={`${className} page`} type="alpha" delay={150}>
+        </div>
+        <QueueAnim className={`${className} page`} type="alpha" delay={150}>
           {isMobile && (
             <div className="img-wrapper" key="image">
               <BannerImage />
@@ -99,7 +107,7 @@ class Banner extends React.PureComponent {
               />
             </div>
           )}
-        </QueueAnim> */}
+        </QueueAnim>
       </div>      
     );
   }

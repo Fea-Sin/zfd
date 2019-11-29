@@ -74,7 +74,7 @@ class Home extends React.Component {
       <DocumentTitle title={`Zf Design - ${intl.formatMessage({ id: 'app.home.slogan' })}`}>
         <>
           <style dangerouslySetInnerHTML={{ __html: getStyle() }} /> {/* eslint-disable-line */}
-          {/* <Banner {...childProps} /> */}
+          <Banner {...childProps} />
           <Page1 {...childProps} />
           <Page2 {...childProps} />
           <Page3 {...childProps} />
