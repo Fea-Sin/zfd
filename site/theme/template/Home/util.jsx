@@ -1,6 +1,8 @@
 /* eslint no-undef: 0 */
 import React from 'react';
-import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
+import ScrollAnim from 'rc-scroll-anim';
+
+const ScrollParallax = ScrollAnim.Parallax
 
 function ParallaxG(props) {
   return <ScrollParallax component="g" {...props} />;
