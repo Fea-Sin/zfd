@@ -11,7 +11,7 @@ import Footer from '../Layout/Footer';
 import ComponentDoc from './ComponentDoc';
 import * as utils from '../utils';
 
-// const { SubMenu } = Menu;
+const { SubMenu } = Menu;
 
 function getActiveMenuItem(props) {
   const { children } = props.params;
@@ -126,23 +126,20 @@ export default class MainContent extends Component {
     return menuItems.map(menuItem => {
       if (menuItem.children) {
         return (
-          <div>
-            <div>hello world</div>
-          </div>
-          // <SubMenu title={<h4>{menuItem.title}</h4>} key={menuItem.title}>
-          //   {menuItem.children.map(child => {
-          //     if (child.type === 'type') {
-          //       return (
-          //         <Menu.ItemGroup title={child.title} key={child.title}>
-          //           {child.children
-          //             .sort((a, b) => a.title.charCodeAt(0) - b.title.charCodeAt(0))
-          //             .map(leaf => this.generateMenuItem(false, leaf, footerNavIcons))}
-          //         </Menu.ItemGroup>
-          //       );
-          //     }
-          //     return this.generateMenuItem(false, child, footerNavIcons);
-          //   })}
-          // </SubMenu>
+          <SubMenu title={<h4>{menuItem.title}</h4>} key={menuItem.title}>
+            {menuItem.children.map(child => {
+              if (child.type === 'type') {
+                return (
+                  <Menu.ItemGroup title={child.title} key={child.title}>
+                    {child.children
+                      .sort((a, b) => a.title.charCodeAt(0) - b.title.charCodeAt(0))
+                      .map(leaf => this.generateMenuItem(false, leaf, footerNavIcons))}
+                  </Menu.ItemGroup>
+                );
+              }
+              return this.generateMenuItem(false, child, footerNavIcons);
+            })}
+          </SubMenu>
         );
       }
       return this.generateMenuItem(true, menuItem, footerNavIcons);
