@@ -8,7 +8,7 @@ const { webpack } = getWebpackConfig;
 // ignore is better: http://stackoverflow.com/q/25384360
 function ignoreMomentLocale(webpackConfig) {
   delete webpackConfig.module.noParse;
-  webpackConfig.plugins.push(new webpackIgnorePlugin(/^\.\/locale$/, /moment$/));
+  webpackConfig.plugins.push(new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/));
 }
 
 function addLocales(webpackConfig) {

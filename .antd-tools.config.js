@@ -51,8 +51,8 @@ function finalizeDist() {
   if (fs.existsSync(path.join(__dirname, './dist'))) {
     // Build less entry file: dist/zfd.less
     fs.writeFileSync(
-      path.join(process.cws(), 'dist', 'zfd.less'),
-      '@import "../lib/style/index.less";\n@import "../lib/style/components.less";';
+      path.join(process.cwd(), 'dist', 'zfd.less'),
+      '@import "../lib/style/index.less";\n@import "../lib/style/components.less";',
     );
 
     // eslint-disable-next-line
