@@ -38,9 +38,10 @@
     "react-dom": ">=16.0.0"
   },
   "dependencies": {
-    "@ant-design/create-react-context": "^0.2.4",
+    "@ant-design/icons": "~1.2.0",
+    "@ant-design/icons-react": "~1.1.5",
     "@types/hoist-non-react-statics": "^3.3.1",
-    "@types/react-slick": "^0.23.3",
+    "@types/react-slick": "~0.23.3",
     "antd": "~3.17.0",
     "array-tree-filter": "^2.1.0",
     "babel-runtime": "6.x",
@@ -64,14 +65,15 @@
     "react-slick": "~0.24.0",
     "resize-observer-polyfill": "^1.5.0",
     "shallowequal": "^1.1.0",
-    "warning": "~4.0.2"
+    "warning": "~4.0.2",
+    "zfd-color": "0.0.1"
   },
   "devDependencies": {
     "@ant-design/colors": "^3.0.0",
     "@sentry/browser": "^5.0.3",
     "@types/classnames": "^2.2.6",
     "@types/prop-types": "^15.5.6",
-    "@types/react": "~16.8.1",
+    "@types/react": "^16.9.15",
     "@types/react-dom": "^16.0.11",
     "@types/react-intl": "^2.3.14",
     "@types/warning": "^3.0.0",

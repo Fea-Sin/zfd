@@ -33,13 +33,13 @@ if (program.pre) {
     '**/components/style/color/**',
     '**/dist/**',
     '_site/**',
-    'components/style/color/*.less',
-    'components/style/color/colorPalette.less',
+    // 'components/style/color/*.less',
+    // 'components/style/color/colorPalette.less',
   ];
 
   // get all ts, js, less files
-  // ['**/*.ts*', '**/*.js*', '**/*.less', '**/*.md', '**/*.html'].forEach(pattern => {
-  ['**/*.ts*', '**/*.js*', '**/*.md', '**/*.html'].forEach(pattern => {
+  ['**/*.ts*', '**/*.js*', '**/*.less', '**/*.md', '**/*.html'].forEach(pattern => {
+  // ['**/*.ts*', '**/*.js*', '**/*.md', '**/*.html'].forEach(pattern => {
     const matchFiles = glob.sync(pattern, {
       ignore: ignoreFiles,
     });
