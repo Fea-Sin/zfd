@@ -66,5 +66,5 @@ module.exports = {
   },
   dist: {
     finalize: finalizeDist,
-  }
+  },
 };
