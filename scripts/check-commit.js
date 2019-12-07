@@ -41,8 +41,9 @@ async function checkCommit({ files }) {
 }
 
 async function checkRemote() {
-  const { remote } = await git.fetch('origin', 'master');
-  if (remote.indexOf('Fea-Sin/zfd') === -1) {
+  const { remote, raw } = await git.fetch('origin', 'master');
+  // console.log('这里返回的是啥====>', await git.fetch('origin', 'master'))
+  if (raw.indexOf('Fea-Sin/zfd') === -1) {
     console.log(chalk.yellow('😓 Your remote origin is not zfd. Do you fork it?'))
     exitProcess()
   }
