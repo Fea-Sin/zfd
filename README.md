@@ -2,7 +2,7 @@
 
 A react component library
 
-## usage
+## install
 ```js
-cnpm install zfd
+npm install zfd
 ```
