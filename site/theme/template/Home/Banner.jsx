@@ -92,8 +92,8 @@ class Banner extends React.PureComponent {
                   key="github-button"
                   size="large"
                   type="stargazers"
-                  namespace="ant-design"
-                  repo="ant-design"
+                  namespace="Fea-Sin"
+                  repo="zfd"
                 />
               )}
             </div>
