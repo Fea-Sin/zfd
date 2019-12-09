@@ -23,7 +23,7 @@ const page2Data = [
     img: 'https://gw.alipayobjects.com/zos/rmsportal/EPaPtDVGnJhyqyBAUZMl.svg',
     name: 'Ant Design Pro',
     slogan: <FormattedMessage id="app.home.product-pro-slogan" />,
-    link: 'https://pro.ant.design/index-cn',
+    link: '###',
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/GobRAKexhfTSJdLFzDFY.svg',
@@ -34,13 +34,13 @@ const page2Data = [
     img: 'https://gw.alipayobjects.com/zos/rmsportal/slVtnOCcgeAcLEPwtewY.svg',
     name: 'AntV',
     slogan: <FormattedMessage id="app.home.product-antv-slogan" />,
-    link: 'https://antv.alipay.com/zh-cn/index.html',
+    link: '###',
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/EAHlyTmYeDtTkZIPbUnP.svg',
     name: 'Ant Design Landing',
     slogan: <FormattedMessage id="app.home.product-landing-slogan" />,
-    link: 'https://landing.ant.design',
+    link: '###',
     new: true,
   },
 ];
@@ -124,13 +124,13 @@ export default function Page2({ isMobile, locale }) {
   const componentButton = (
     <div key="b" className="components-button-wrapper">
       <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN)}>
-        Ant Design of React <Icon type="right" />
+        ZF Design of React [todo] <Icon type="right" />
       </Link>
-      <a href="https://ng.ant.design/" target="_black">
-        Ant Design of Angular <Icon type="right" />
+      <a href="###">
+        Ant Design of Angular [todo] <Icon type="right" />
       </a>
-      <a href="https://vue.ant.design/" target="_black">
-        Ant Design of Vue <Icon type="right" />
+      <a href="###">
+        Ant Design of Vue [todo] <Icon type="right" />
       </a>
     </div>
   );
@@ -141,12 +141,14 @@ export default function Page2({ isMobile, locale }) {
     const mobileContent = (
       <div className="components-button-wrapper">
         <p key="p">{item.slogan}</p>
-        <a className="more-mobile-react" href="https://mobile.ant.design" target="_black">
+        <a className="more-mobile-react" href="###">
           <FormattedMessage id="app.home.more-mobile-react" />
+          <span> [todo]</span>
           <Icon type="right" />
         </a>
-        <a className="more-mobile-angular" href="http://ng.mobile.ant.design" target="_black">
+        <a className="more-mobile-angular" href="###">
           <FormattedMessage id="app.home.more-mobile-angular" />
+          <span> [todo]</span>
           <Icon type="right" />
         </a>
       </div>
@@ -157,7 +159,9 @@ export default function Page2({ isMobile, locale }) {
         : [
             <p key="p">{item.slogan}</p>,
             <span className="more" key="a">
-              <FormattedMessage id="app.home.more" /> <Icon type="right" />
+              <FormattedMessage id="app.home.more" />
+              <span> [todo]</span>
+              <Icon type="right" />
             </span>,
           ];
     const content = isMobile && !i ? componentButton : moreContent;
@@ -202,7 +206,7 @@ export default function Page2({ isMobile, locale }) {
             type="bottom"
             leaveReverse
           >
-            <h3 key="h1">Ant Design Components</h3>
+            <h3 key="h1">ZF Design Components</h3>
             <p key="p">
               <FormattedMessage id="app.home.components-explain" />
             </p>
@@ -222,6 +226,7 @@ export default function Page2({ isMobile, locale }) {
       </div>
       <div className="parallax-bg bottom">{svgBgChildArray[0]}</div>
       <div className="parallax-bg top">{svgBgChildArray[1]}</div>
+      <div style={{height: 300}}></div>
     </div>
   );
 }

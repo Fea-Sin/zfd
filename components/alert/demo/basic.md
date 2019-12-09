@@ -14,7 +14,7 @@ title:
 The simplest usage for short messages.
 
 ````jsx
-import { Alert } from 'antd';
+import { Alert } from 'zfd'; // eslint-disable-line
 
 ReactDOM.render(
   <Alert message="Success Text" type="success" />,

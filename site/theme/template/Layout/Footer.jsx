@@ -398,8 +398,9 @@ class Footer extends React.Component {
         </div> */}
         <div className="bottom-bar">
           Made with <span className="heart">❤</span> by
-          <a target="_blank" rel="noopener noreferrer" href="https://xtech.antfin.com">
-            <FormattedMessage id="app.footer.company" />
+          <a rel="noopener noreferrer" href="###">
+            {/* <FormattedMessage id="app.footer.company" /> */}
+            YZF-SEM-Beijing
           </a>
         </div>
       </footer>

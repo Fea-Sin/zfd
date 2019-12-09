@@ -68,7 +68,7 @@ class Banner extends React.PureComponent {
             </div>
           )}
           <QueueAnim className="text-wrapper" key="text" type="bottom">
-            <h1 key="h1">Ant Design</h1>
+            <h1 key="h1">ZF Design</h1>
             <p key="p">
               <FormattedMessage id="app.home.introduce" />
             </p>

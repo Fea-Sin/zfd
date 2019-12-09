@@ -77,7 +77,6 @@ class Home extends React.Component {
           <Banner {...childProps} />
           <Page1 {...childProps} />
           <Page2 {...childProps} />
-          <Page3 {...childProps} />
           <Footer />
         </>
       </DocumentTitle>

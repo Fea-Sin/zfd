@@ -198,43 +198,40 @@ export default class Header extends React.Component {
         >
           <Menu.Item key="pro">
             <a
-              href="http://pro.ant.design"
+              href="#"
               className="header-link"
-              target="_blank"
               rel="noopener noreferrer"
             >
               <FormattedMessage id="app.header.menu.pro" />
+              <span> [todo]</span>
             </a>
           </Menu.Item>
           <Menu.Item key="ng">
             <a
-              href="http://ng.ant.design"
+              href="#"
               className="header-link"
-              target="_blank"
               rel="noopener noreferrer"
             >
-              Ant Design of Angular
+              Ant Design of Angular [todo]
             </a>
           </Menu.Item>
           <Menu.Item key="vue">
             <a
-              href="http://vue.ant.design"
+              href="#"
               className="header-link"
-              target="_blank"
               rel="noopener noreferrer"
             >
-              Ant Design of Vue
+              Ant Design of Vue [todo]
             </a>
           </Menu.Item>
           {isZhCN ? (
             <Menu.Item key="course" className="hide-in-home-page">
               <a
-                href="https://www.yuque.com/ant-design/course"
+                href="#"
                 className="header-link"
-                target="_blank"
                 rel="noopener noreferrer"
               >
-                Ant Design 实战教程
+                Ant Design 实战教程 [todo]
               </a>
             </Menu.Item>
           ) : null}
@@ -265,10 +262,7 @@ export default class Header extends React.Component {
                 alt="logo"
                 src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
               />
-              <img
-                alt="Ant Design"
-                src="https://gw.alipayobjects.com/zos/rmsportal/DkKNubTaaVsKURhcVGkh.svg"
-              />
+              <span style={{fontSize: 20, color: '#333'}}>ZF Design</span>
               <Santa />
             </Link>
           </Col>
