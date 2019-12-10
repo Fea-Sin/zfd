@@ -14,8 +14,8 @@ LocaleProvider 使用 React 的 [context](https://facebook.github.io/react/docs/
 只需在应用外围包裹一次即可全局生效。
 
 ```jsx
-import { LocaleProver } from 'antd';
-import zh_CN from 'antd/lib/locale-provider/zh_CN';
+import { LocaleProver } from 'zfd';
+import zh_CN from 'zfd/lib/locale-provider/zh_CN';
 import moment from 'moment';
 import 'moment/locale/zh-CN';
 
@@ -26,10 +26,10 @@ return <LocaleProvider locale={zh-CN}><App /></LocaleProver>;
 
 我们提供了英语，中文，俄语，法语，德语等多种语言支持，所有语言包可以在[这里](https://github.com/ant-design/ant-design/blob/master/components/locale-provider/) 找到。
 
-注意：如果你需要使用 UMD 版的 dist 文件，应该引入 `antd/dist/antd-with-locale.js`，同时引入 moment 对应的 locale，然后按一下方式使用：
+注意：如果你需要使用 UMD 版的 dist 文件，应该引入 `zfd/dist/antd-with-locale.js`，同时引入 moment 对应的 locale，然后按一下方式使用：
 
 ```jsx
-const { LocaleProvider, locales } = window.antd;
+const { LocaleProvider, locales } = window.zfd;
 
 return <LocaleProvider locale={locale.en_US}><App /></LocaleProvider>
 ```
@@ -47,5 +47,5 @@ return <LocaleProvider locale={locale.en_US}><App /></LocaleProvider>
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| locale | 语言包配置，语言包可到 [antd/lib/locale-provider](http://unpkg.com/antd/lib/locale-provider/) 目录下寻找 | object |
+| locale | 语言包配置，语言包可到 [zfd/lib/locale-provider](http://unpkg.com/antd/lib/locale-provider/) 目录下寻找 | object |
  - |

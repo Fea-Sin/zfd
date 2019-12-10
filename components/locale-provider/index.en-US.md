@@ -12,8 +12,8 @@ title: LocaleProvider
 `LocaleProvider` makes use of [context](https://facebook.github.io/react/docs/context.html), a feature of React, to accomplish global effectiveness by wrapping the app only once.
 
 ```jsx
-import { LocaleProvider } from 'antd';
-import fr_FR from 'antd/lib/locale-provider/fr_FR';
+import { LocaleProvider } from 'zfd';
+import fr_FR from 'zfd/lib/locale-provider/fr_FR';
 import moment from 'moment';
 import 'moment/locale/fr';
 
@@ -25,10 +25,10 @@ return <LocaleProvider locale={fr_FR}><App /></LocaleProvider>;
 
 We provide some locales like English, Chinese, Russian, German, French etc. All locale packages can be found in [here](https://github.com/ant-design/ant-design/blob/master/components/locale-provider/).
 
-Note: if you need to use antd's UMD dist file, please use `antd/dist/antd-with-locales.js` and corresponding moment locale:
+Note: if you need to use zfd's UMD dist file, please use `zfd/dist/antd-with-locales.js` and corresponding moment locale:
 
 ```jsx
-const { LocaleProvider, locales } = window.antd;
+const { LocaleProvider, locales } = window.zfd;
 
 ...
 
@@ -47,4 +47,4 @@ This component aims to provide localization of the built-in text. If you want to
 
 | Property | Description | Type | Default |
 | -------- | ----------- | ---- | ------- |
-| locale | language package setting, you can find the packages in [antd/lib/locale-provider](http://unpkg.com/antd/lib/locale-provider/) | object | - |
+| locale | language package setting, you can find the packages in [zfd/lib/locale-provider](http://unpkg.com/antd/lib/locale-provider/) | object | - |

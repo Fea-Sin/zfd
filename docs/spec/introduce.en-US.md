@@ -1,7 +1,7 @@
 ---
 category: ZF Design
 order: 0
-title: 介绍
+title: Introduction
 ---
 
 <div style="text-align:center;margin:40px 0;">
@@ -14,7 +14,7 @@ ZF Design which is specially created for internal desktop applications, is commi
 
 ---
 
-## 设计资源
+## Guidelines and Resources
 
 We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.
 
@@ -23,4 +23,4 @@ We supply a series of design principles, practical patterns and high quality des
 - [Resource Download](/docs/spec/download)
 - [Sketch Tools](http://kitchen.alipay.com/)
 
-## 前端实现
+## Front-end Implementation
