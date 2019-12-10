@@ -12,7 +12,7 @@ module.exports = {
     'app.header.menu.spec': 'Guidelines',
     'app.header.menu.resource': 'Resources',
     'app.header.menu.mobile': 'Mobile',
-    'app.header.menu.pro': 'Ant Design Pro',
+    'app.header.menu.pro': 'ZF Design Pro',
     'app.header.menu.ecosystem': 'Ecosystem',
     'app.header.lang': '中文',
     'app.content.edit-page': 'Edit this page on GitHub!',
@@ -34,12 +34,12 @@ module.exports = {
     'app.home.design-language': 'Design Language',
     'app.home.solution': 'Solution',
     'app.home.components-explain':
-      'Based on the Ant Design language, we have provided a suite of out-of-the-box with high quality for developing and serving enterprise background applications, including the official React implementation and Angular, Vue implementations',
+      'Based on the ZF Design language, we have provided a suite of out-of-the-box with high quality for developing and serving enterprise background applications, including the official React implementation and Angular, Vue implementations',
     'app.home.product-pro-slogan': 'Out-of-the-box front-end / Design solution',
     'app.home.product-mobile-slogan':
       "antd-mobile is the implementation of Ant Design's mobile specification",
     'app.home.product-landing-slogan':
-      'Landing Pages templates and specifications based of Ant Design language',
+      'Landing Pages templates and specifications based of ZF Design language',
     'app.home.product-antv-slogan':
       'Simple, professional, with unlimited possibilities for data visualization solutions',
     'app.home.tool-title': 'Tools & Resources',
@@ -51,8 +51,8 @@ module.exports = {
     'app.home.tool-kitchen-content': 'A Sketch tools for designers',
     'app.home.getting-started': 'Getting Started',
     'app.home.more': 'Learn more',
-    'app.home.more-mobile-react': 'Ant Design Mobile of React',
-    'app.home.more-mobile-angular': 'Ant Design Mobile of Angular',
+    'app.home.more-mobile-react': 'ZF Design Mobile of React',
+    'app.home.more-mobile-angular': 'ZF Design Mobile of Angular',
     'app.footer.repo': 'GitHub Repository',
     'app.footer.awesome': 'Awesome Ant Design',
     'app.footer.course': 'Ant Design Practical Tutorial',

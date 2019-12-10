@@ -212,7 +212,7 @@ export default class Header extends React.Component {
               className="header-link"
               rel="noopener noreferrer"
             >
-              Ant Design of Angular [todo]
+              ZF Design of Angular [todo]
             </a>
           </Menu.Item>
           <Menu.Item key="vue">
@@ -221,7 +221,7 @@ export default class Header extends React.Component {
               className="header-link"
               rel="noopener noreferrer"
             >
-              Ant Design of Vue [todo]
+              ZF Design of Vue [todo]
             </a>
           </Menu.Item>
           {isZhCN ? (
@@ -231,7 +231,7 @@ export default class Header extends React.Component {
                 className="header-link"
                 rel="noopener noreferrer"
               >
-                Ant Design 实战教程 [todo]
+                ZF Design 实战教程 [todo]
               </a>
             </Menu.Item>
           ) : null}
@@ -239,7 +239,7 @@ export default class Header extends React.Component {
       </Menu>,
     ];
 
-    const searchPlaceholder = locale === 'zh-CN' ? '在 ant.design 中搜索' : 'Search in ant.design';
+    const searchPlaceholder = locale === 'zh-CN' ? '在 zf.design 中搜索' : 'Search in zf.design';
     return (
       <header id="header" className={headerClassName}>
         {isMobile && (

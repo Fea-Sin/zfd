@@ -5,7 +5,7 @@ toc: false
 timeline: true
 ---
 
-`antd` 严格遵循[Semantic Versioning 2.0.0](http://semver.org/lang/zh-CN/) 语义化版本规范
+`zfd` 严格遵循[Semantic Versioning 2.0.0](http://semver.org/lang/zh-CN/) 语义化版本规范
 
 ### 发布周期
 
@@ -13,6 +13,10 @@ timeline: true
 - 次版本号：每月发布一个带有新特性的向下兼容版本。
 - 主版本号：有破坏性更新和新特性性，不在发布周期内。
 
-## 1.0.1
+## 0.0.4
 
-hello world
+修改文本说明
+
+## 0.0.3
+
+增加 Alert 组件

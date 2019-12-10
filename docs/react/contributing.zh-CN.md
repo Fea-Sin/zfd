@@ -8,12 +8,12 @@ toc: false
 
 ## 行为准则
 
-我们有一份 [行为准则](https://github.com/ant-design/ant-design/blob/master/CODE_OF_CONDUCT.md)，希望所有的贡献者都能
+我们有一份 [行为准则](https://github.com/Fea-Sin/zfd)，希望所有的贡献者都能
 遵守，请花时间阅读一遍全文以确保你能明白哪些是可以做的，哪些是不可以做的。
 
 ## 透明的开发
 
-我们所有的工作都会放在 [GitHub](https://github.com/ant-design) 上。不管核心团队的成员还是外部贡献者的 pull request 都
+我们所有的工作都会放在 [GitHub](https://github.com/Fea-Sin/zfd) 上。不管核心团队的成员还是外部贡献者的 pull request 都
 需要经过同样流程 review。
 
 ## 分支管理
@@ -33,7 +33,7 @@ toc: false
 如果你有改进我们的 API 或者新增功能的想法，我们同样推荐你使用我们提供的 [issue 小助手](http://new-issue.ant.design) 来新建
 一个添加新功能的 issue。
 
-如果你希望协助开发新的 API ，请参考 [API 规范](https://github.com/ant-design/ant-design/wiki/API-Naming-rules) 进行
+如果你希望协助开发新的 API ，请参考 [API 规范](https://github.com/Fea-Sin/zfd/wiki) 进行
 命名。
 
 ## 第一次贡献

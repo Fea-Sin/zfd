@@ -21,24 +21,24 @@ const page2Data = [
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/EPaPtDVGnJhyqyBAUZMl.svg',
-    name: 'Ant Design Pro',
+    name: 'ZF Design Pro',
     slogan: <FormattedMessage id="app.home.product-pro-slogan" />,
     link: '###',
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/GobRAKexhfTSJdLFzDFY.svg',
-    name: 'Ant Design Mobile',
+    name: 'ZF Design Mobile',
     slogan: <FormattedMessage id="app.home.product-mobile-slogan" />,
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/slVtnOCcgeAcLEPwtewY.svg',
-    name: 'AntV',
+    name: 'ZFV',
     slogan: <FormattedMessage id="app.home.product-antv-slogan" />,
     link: '###',
   },
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/EAHlyTmYeDtTkZIPbUnP.svg',
-    name: 'Ant Design Landing',
+    name: 'ZF Design Landing',
     slogan: <FormattedMessage id="app.home.product-landing-slogan" />,
     link: '###',
     new: true,
@@ -127,10 +127,10 @@ export default function Page2({ isMobile, locale }) {
         ZF Design of React [todo] <Icon type="right" />
       </Link>
       <a href="###">
-        Ant Design of Angular [todo] <Icon type="right" />
+        ZF Design of Angular [todo] <Icon type="right" />
       </a>
       <a href="###">
-        Ant Design of Vue [todo] <Icon type="right" />
+        ZF Design of Vue [todo] <Icon type="right" />
       </a>
     </div>
   );
