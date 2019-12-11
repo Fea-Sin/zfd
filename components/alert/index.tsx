@@ -56,17 +56,17 @@ export default class Alert extends React.Component<AlertProps, AlertState> {
     // 重复一次后才能正确设置 height
     dom.style.height = `${dom.offsetHeight}px`;
 
-    // this.setState({
-    //   closing: false,
-    // })
+    this.setState({
+      closing: false,
+    });
     (this.props.onClose || noop)(e);
   };
 
   animationEnd = () => {
-    // this.setState({
-    //   closed: true,
-    //   closing: true,
-    // })
+    this.setState({
+      closed: true,
+      closing: true,
+    });
     (this.props.afterClose || noop)();
   };
 
@@ -82,15 +82,16 @@ export default class Alert extends React.Component<AlertProps, AlertState> {
       icon,
     } = this.props;
     let { closable, type, showIcon, iconType } = this.props;
+
     const prefixCls = getPrefixCls('alert', customizePrefixCls);
 
-    // bannser模式默认有 Icon
+    // banner模式默认有 Icon
     showIcon = banner && showIcon === undefined ? true : showIcon;
     // banner模式默认为警告
     type = banner && type === undefined ? 'warning' : type || 'info';
 
     let iconTheme: ThemeType = 'filled';
-    // should wo give a warning?
+    // should we give a warning?
     // warning(!iconType, `The property 'iconType' is deprecated. Use the property 'icon' instead.`);
     if (!iconType) {
       switch (type) {
@@ -115,6 +116,7 @@ export default class Alert extends React.Component<AlertProps, AlertState> {
         iconTheme = 'outlined';
       }
     }
+
     // closeable when closeText is assigned
     if (closeText) {
       closable = true;
@@ -132,11 +134,13 @@ export default class Alert extends React.Component<AlertProps, AlertState> {
       },
       className,
     );
+
     const closeIcon = closable ? (
       <a onClick={this.handleClose} className={`${prefixCls}-close-icon`}>
-        {closeText || '关闭'}
+        {closeText || <Icon type="close" />}
       </a>
     ) : null;
+
     const dataOrAriaProps = getDataOrAriaProps(this.props);
 
     const iconNode = (icon &&
@@ -160,7 +164,6 @@ export default class Alert extends React.Component<AlertProps, AlertState> {
       >
         <div data-show={this.state.closing} className={alertCls} style={style} {...dataOrAriaProps}>
           {showIcon ? iconNode : null}
-          {showIcon ? 'icon' : null}
           <span className={`${prefixCls}-message`}>{message}</span>
           <span className={`${prefixCls}-description`}>{description}</span>
           {closeIcon}
