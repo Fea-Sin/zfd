@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Animate from 'rc-animate';
-// import Icon, { ThemeType } from '../icon';
 import classNames from 'classnames';
 import getDataOrAriaProps from '../_util/getDataOrAriaProps';
 import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
