@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tooltip, Icon } from 'antd';
 
-const branchUrl = 'https://github.com/Fea-Sin/zfd';
+const branchUrl = 'https://github.com/Fea-Sin/zfd/tree/master/';
 
 export default function EditButton({ title, filename }) {
   return (
