@@ -8,4 +8,4 @@ title: 实践案例
 Design 兼顾专业和非专业的设计人员，具有学习成本低、上手速度快、实现效果好等特点，并且提供从界面设计到前端开发的全链路生态，可以
 大大提升设计和开发效率。
 
-ZF Design 目前在外部也有许多产品实践，如果你的公司和产品从中受益，[欢迎留言](https://github.com/Fea-Sin/zfd/issues/1)。 
+如果你的公司和产品从中受益，[欢迎留言](https://github.com/Fea-Sin/zfd/issues/1)。 
