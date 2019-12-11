@@ -6,10 +6,12 @@ import { FormattedMessage } from 'react-intl';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classNames from 'classnames';
 import LZString from 'lz-string';
-import { Icon, Tooltip } from 'antd';
+import { Icon } from 'antd';
 import EditButton from './EditButton';
 import ErrorBoundary from './ErrorBoundary';
 import BrowserFrame from '../BrowserFrame';
+import Tooltip from 'antd/es/tooltip';
+import 'antd/es/tooltip/style';
 
 function compress(string) {
   return LZString.compressToBase64(string)
@@ -171,7 +173,7 @@ export default class Demo extends React.Component {
       js_pre_processor: 'typescript',
     };
     const riddlePrefillConfig = {
-      title: `${localizedTitle} - Ant Design Demo`,
+      title: `${localizedTitle} - ZF Design Demo`,
       js: sourceCode,
       css: prefillStyle,
     };

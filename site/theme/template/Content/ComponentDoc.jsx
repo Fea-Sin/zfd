@@ -3,11 +3,19 @@ import PropTypes from 'prop-types';
 import DocumentTitle from 'react-document-title';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import { Row, Col, Icon, Affix, Tooltip } from 'antd';
+import { Icon } from 'antd';
 import { getChildren } from 'jsonml.js/lib/utils';
 import Demo from './Demo';
 import EditButton from './EditButton';
 import { ping } from '../utils';
+import Row from 'antd/es/row';
+import 'antd/es/row/style';
+import Col from 'antd/es/col';
+import 'antd/es/col/style';
+import Affix from 'antd/es/affix';
+import 'antd/es/affix/style';
+import Tooltip from 'antd/es/tooltip';
+import 'antd/es/tooltip/style';
 
 export default class ComponentDoc extends React.Component {
   static contextTypes = {
@@ -94,7 +102,7 @@ export default class ComponentDoc extends React.Component {
       'show-riddle-button': showRiddleButton,
     });
     return (
-      <DocumentTitle title={`${subtitle || ''} ${title[locale] || title} - Ant Design`}>
+      <DocumentTitle title={`${subtitle || ''} ${title[locale] || title} - ZF Design`}>
         <article className={articleClassName}>
           <Affix className="toc-affix" offsetTop={16}>
             <ul id="demo-toc" className="toc">

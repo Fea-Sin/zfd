@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'bisheng/router';
-import { Row, Col, Menu, Icon, Affix } from 'antd';
+import { Icon } from 'antd';
 import classNames from 'classnames';
 import get from 'lodash/get';
 import MobileMenu from 'rc-drawer';
@@ -10,6 +10,14 @@ import PrevAndNext from './PrevAndNext';
 import Footer from '../Layout/Footer';
 import ComponentDoc from './ComponentDoc';
 import * as utils from '../utils';
+import Row from 'antd/es/row';
+import 'antd/es/row/style';
+import Col from 'antd/es/col';
+import 'antd/es/col/style';
+import Menu from 'antd/es/menu';
+import 'antd/es/menu/style';
+import Affix from 'antd/es/affix';
+import 'antd/es/affix/style';
 
 const { SubMenu } = Menu;
 

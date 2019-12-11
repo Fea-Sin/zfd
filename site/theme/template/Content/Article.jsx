@@ -3,8 +3,14 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import DocumentTitle from 'react-document-title';
 import { getChildren } from 'jsonml.js/lib/utils';
-import { Timeline, Alert, Affix } from 'antd';
+// import { Timeline, Alert, Affix } from 'antd';
 import EditButton from './EditButton';
+import Timeline from 'antd/es/timeline';
+import 'antd/es/timeline/style';
+import Alert from 'antd/es/alert';
+import 'antd/es/alert/style';
+import Affix from 'antd/es/affix';
+import 'antd/es/affix/style';
 
 export default class Article extends React.Component {
   static contextTypes = {
@@ -68,7 +74,7 @@ export default class Article extends React.Component {
     } = this.context;
     const isNotTranslated = locale === 'en-US' && typeof title === 'object';
     return (
-      <DocumentTitle title={`${title[locale] || title} - Ant Design`}>
+      <DocumentTitle title={`${title[locale] || title} - ZF Design`}>
         {/* eslint-disable-next-line */}
         <article className="markdown" onClick={this.onResourceClick}>
           {isNotTranslated && (

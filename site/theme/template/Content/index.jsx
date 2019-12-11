@@ -15,7 +15,6 @@ export default collect(async nextProps => {
   
   console.log('传入参数', nextProps)
   
-  console.log('----> 数据', pageData)
   if (!pageData) {
     throw 404; // eslint-disable-line no-throw-literal
   }
