@@ -4,8 +4,7 @@ import Animate from 'rc-animate';
 import classNames from 'classnames';
 import getDataOrAriaProps from '../_util/getDataOrAriaProps';
 import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import Icon from 'antd/es/icon';
-import 'antd/es/icon/style';
+import { Icon } from 'antd';
 import { ThemeType } from '../icon';
 
 function noop() {}

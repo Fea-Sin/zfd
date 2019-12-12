@@ -16,8 +16,7 @@ A relevant icon makes information clearer and more friendly.
 
 ````jsx
 import { Alert } from 'zfd'; // eslint-disable-line
-import Icon from 'antd/es/icon';
-import 'antd/es/icon/style';
+import { Icon } from 'antd';
 
 const icon = <Icon type="smile" />;
 
