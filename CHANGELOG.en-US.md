@@ -13,6 +13,10 @@ timeline: true
 - Monthly release: minor version at the end of every month for new features.
 - Major version release is not included in this schedule for breaking change and new features.
 
+## 0.0.5
+
+Alert component bugfix
+
 ## 0.0.4
 
 Change the directions
