@@ -19,7 +19,7 @@ describe('Alert', () => {
         message='warning test warning test warning test'
         type='warning'
         closable
-        onclose={onClose}
+        onClose={onClose}
         afterClose={afterClose}
       />
     )
