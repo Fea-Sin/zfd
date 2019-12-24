@@ -1,8 +1,10 @@
 <p align="center">
   <a href="http://39.107.35.212:8083/">
-    <img width="200" src="./github/LOGO.png">
+    <img width="180" src="./github/LOGO.png">
   </a>
 </p>
+
+<h1 align="center">ZF Design</h1>
 
 A React Components Library
 
