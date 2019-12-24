@@ -261,7 +261,7 @@ export default class Header extends React.Component {
             <Link to={utils.getLocalizedPathname('/', isZhCN)} id="logo">
               <img
                 alt="logo"
-                src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+                src="http://39.107.35.212/images/LOGO.png"
               />
               <span style={{fontSize: 20, color: '#333'}}>ZF Design</span>
               <Santa />
