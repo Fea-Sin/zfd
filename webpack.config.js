@@ -12,7 +12,7 @@ function ignoreMomentLocale(webpackConfig) {
 }
 
 function addLocales(webpackConfig) {
-  let packageName = 'antd-with-locales';
+  let packageName = 'zfd-with-locales';
   if (webpackConfig.entry['antd.min']) {
     packageName += '.min';
   }
