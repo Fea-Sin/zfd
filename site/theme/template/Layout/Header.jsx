@@ -262,6 +262,7 @@ export default class Header extends React.Component {
               <img
                 alt="logo"
                 src="http://39.107.35.212/images/LOGO.png"
+                style={{marginTop: '-10px'}}
               />
               <span style={{fontSize: 20, color: '#333'}}>ZF Design</span>
               <Santa />

@@ -6,9 +6,11 @@ title: ZF Design of React
 Following the ZF Design specification, we developed a React UI library `zfd` that contains a set of high quality components and demos for building rich, interactive user interfaces.
 
 <div class="pic-plus">
-  <img width="150" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
+  <img width="120" src="http://39.107.35.212/images/LOGO.png">
   <span>+</span>
-  <img width="160" src="https://gw.alipayobjects.com/zos/rmsportal/tXlLQhLvkEelMstLyHiN.svg">
+  <img width="120" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
+  <span>+</span>
+  <img width="120" src="https://gw.alipayobjects.com/zos/rmsportal/tXlLQhLvkEelMstLyHiN.svg">
 </div>
 
 <style>

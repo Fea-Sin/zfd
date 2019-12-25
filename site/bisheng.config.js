@@ -31,7 +31,8 @@ module.exports = {
     changelog: ['CHANGELOG.zh-CN.md', 'CHANGELOG.en-US.md'],
   },
   theme: './site/theme',
-  htmlTemplace: './site/theme/static/template.html',
+  // htmlTemplace: './site/theme/static/template.html',
+  htmlTemplate: path.join(__dirname, './theme/static/template.html'),
   themeConfig: {
     categoryOrder: {
       'Ant Design': 0,
