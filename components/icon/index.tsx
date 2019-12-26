@@ -14,6 +14,8 @@ import warning from '../_util/warning';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
 
+export type ThemeType = 'filled' | 'outlined' | 'twoTone';
+
 // Initial  setting
 ReactIcon.add(...Object.keys(allIcons).map(key => (allIcons as any)[key]));
 setTwoToneColor('#1890ff');
@@ -35,8 +37,6 @@ export interface CustomIconComponentProps {
   rotate?: number;
   ['aria-hidden']?: React.AriaAttributes['aria-hidden'];
 }
-
-export type ThemeType = 'filled' | 'outlined' | 'twoTone';
 
 export interface IconProps {
   tabIndex?: number;
