@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://39.107.35.212:8083/">
-    <img width="180" src="./github/LOGO.png">
+    <img width="180" src="http://39.107.35.212/images/LOGO.png">
   </a>
 </p>
 
