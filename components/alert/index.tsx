@@ -4,8 +4,7 @@ import Animate from 'rc-animate';
 import classNames from 'classnames';
 import getDataOrAriaProps from '../_util/getDataOrAriaProps';
 import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import { Icon } from 'antd';
-import { ThemeType } from '../icon';
+import Icon, { ThemeType } from '../icon';
 
 function noop() {}
 
@@ -153,7 +152,6 @@ export default class Alert extends React.Component<AlertProps, AlertState> {
       ) : (
         <span className={`${prefixCls}-icon`}>{icon}</span>
       ))) || <Icon className={`${prefixCls}-icon`} type={iconType} theme={iconTheme} />;
-
     return this.state.closed ? null : (
       <Animate
         component=""

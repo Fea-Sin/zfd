@@ -158,7 +158,7 @@ export default class Header extends React.Component {
       >
         <FormattedMessage id="app.header.lang" />
       </Button>,
-      <div className="version">
+      <div className="version" key="version">
         <Select
           key="version"
           size="small"
