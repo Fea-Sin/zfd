@@ -7,7 +7,6 @@ describe('zfd dist files', () => {
   // https://github.com/ant-design/ant-design/issues/1968
   it('exports modules correctly', () => {
     const zfd = testDist ? require('../dist/zfd') : require('../components'); //eslint-disable-line
-    console.log('这里是啥-----', zfd);
     expect(Object.keys(zfd)).toMatchSnapshot();
   });
 

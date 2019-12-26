@@ -169,7 +169,7 @@
     "xhr2": "^0.1.4"
   },
   "scripts": {
-    "test": "jest --config .jest.js --no-cache",
+    "test": "jest --config .jest.js --no-cache --updateSnapshot",
     "test-node": "jest --config .jest.node.js --no-cache",
     "test-all": "./scripts/test-all.sh",
     "check-commit": "node ./scripts/check-commit.js",

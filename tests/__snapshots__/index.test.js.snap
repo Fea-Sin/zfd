@@ -3,6 +3,7 @@
 exports[`zfd dist files exports modules correctly 1`] = `
 Array [
   "Alert",
+  "Icon",
   "LocaleProvider",
 ]
 `;
