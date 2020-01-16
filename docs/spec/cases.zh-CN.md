@@ -18,4 +18,6 @@ umi，中文可发音为乌米，是一个可插拔的企业级 react 应用框�
 
 ### Umi 架构图
 
-<img src="https://gw.alipayobjects.com/zos/rmsportal/zvfEXesXdgTzWYZCuHLe.png">
+<div style='margin:0 auto; width:80%;'>
+  <img src="https://gw.alipayobjects.com/zos/rmsportal/zvfEXesXdgTzWYZCuHLe.png">
+</div>
