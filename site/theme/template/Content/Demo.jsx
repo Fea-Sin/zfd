@@ -7,10 +7,10 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 import classNames from 'classnames';
 import LZString from 'lz-string';
 import { Icon } from 'antd';
+import Tooltip from 'antd/es/tooltip';
 import EditButton from './EditButton';
 import ErrorBoundary from './ErrorBoundary';
 import BrowserFrame from '../BrowserFrame';
-import Tooltip from 'antd/es/tooltip';
 import 'antd/es/tooltip/style';
 
 function compress(string) {

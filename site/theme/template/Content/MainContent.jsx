@@ -5,11 +5,6 @@ import { Icon } from 'antd';
 import classNames from 'classnames';
 import get from 'lodash/get';
 import MobileMenu from 'rc-drawer';
-import Article from './Article';
-import PrevAndNext from './PrevAndNext';
-import Footer from '../Layout/Footer';
-import ComponentDoc from './ComponentDoc';
-import * as utils from '../utils';
 import Row from 'antd/es/row';
 import 'antd/es/row/style';
 import Col from 'antd/es/col';
@@ -18,6 +13,11 @@ import Menu from 'antd/es/menu';
 import 'antd/es/menu/style';
 import Affix from 'antd/es/affix';
 import 'antd/es/affix/style';
+import Footer from '../Layout/Footer';
+import ComponentDoc from './ComponentDoc';
+import * as utils from '../utils';
+import Article from './Article';
+import PrevAndNext from './PrevAndNext';
 
 const { SubMenu } = Menu;
 

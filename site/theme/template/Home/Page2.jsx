@@ -7,8 +7,8 @@ import Col from 'antd/es/col';
 import 'antd/es/col/style';
 import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
-import * as utils from '../utils';
 import ScrollAnim from 'rc-scroll-anim';
+import * as utils from '../utils';
 import svgBgToParallax from './util';
 
 const ScrollOverPack = ScrollAnim.OverPack;
@@ -226,7 +226,7 @@ export default function Page2({ isMobile, locale }) {
       </div>
       <div className="parallax-bg bottom">{svgBgChildArray[0]}</div>
       <div className="parallax-bg top">{svgBgChildArray[1]}</div>
-      <div style={{height: 300}}></div>
+      <div style={{height: 300}} />
     </div>
   );
 }

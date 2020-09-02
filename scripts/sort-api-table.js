@@ -27,9 +27,9 @@ function getCellValue(node) {
 // from small to large
 const  sizeBreakPoints = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 
-const groups: {
+const groups = {
   isDynamic: val => /^on[A-Z]/.test(val),
-  isSize: val => sizeBreakPoints.indexOf(val) > -1
+  isSize: val => sizeBreakPoints.indexOf(val) > -1,
 }
 
 function asciiSort(prev, next) {

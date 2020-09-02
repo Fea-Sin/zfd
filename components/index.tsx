@@ -21,4 +21,4 @@ export { default as Icon } from './icon';
 
 export { default as LocaleProvider } from './locale-provider';
 
-export { default as SlideShow } from './slide-show';
+export { default as SlideShow } from './slideshow';

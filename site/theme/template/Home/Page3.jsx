@@ -8,9 +8,9 @@ import 'antd/es/tag/style';
 import QueueAnim from 'rc-queue-anim';
 import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
+import ScrollAnim from 'rc-scroll-anim';
 import * as utils from '../utils';
 import svgBgToParallax from './util';
-import ScrollAnim from 'rc-scroll-anim';
 
 const ScrollOverPack = ScrollAnim.OverPack;
 

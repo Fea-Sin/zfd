@@ -6,9 +6,9 @@ import ScrollAnim from 'rc-scroll-anim';
 import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
 import GitHubButton from 'react-github-button';
+import Button from 'antd/es/button';
 import BannerImage from './BannerImage';
 import * as utils from '../utils';
-import Button from 'antd/es/button';
 import 'antd/es/button/style';
 
 const ScrollParallax = ScrollAnim.Parallax;

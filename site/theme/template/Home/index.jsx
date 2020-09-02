@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import Banner from './Banner';
 import Page1 from './Page1';
 import Page2 from './Page2';
-import Page3 from './Page3';
 import Footer from '../Layout/Footer';
 
 // To store style which is only for Home and has conflicts with others.

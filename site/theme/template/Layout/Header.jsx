@@ -4,9 +4,6 @@ import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
 import { Icon } from 'antd';
-import Santa from './Santa';
-import * as utils from '../utils';
-import { version as antdVersion } from '../../../../package.json';
 import Select from 'antd/es/select';
 import 'antd/es/select/style';
 import Menu from 'antd/es/menu';
@@ -20,6 +17,9 @@ import 'antd/es/popover/style';
 import Input from 'antd/es/input';
 import 'antd/es/input/style';
 import Button from 'antd/es/button';
+import { version as antdVersion } from '../../../../package.json';
+import * as utils from '../utils';
+import Santa from './Santa';
 import 'antd/es/button/style';
 
 

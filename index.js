@@ -5,7 +5,6 @@ function camelCase(name) {
 const req = require.context('./components', true, /^\.\/[^_][\w]+\/style\/index\.tsx?$/);
 
 req.keys().forEach(mod => {
-  console.log('项目构建-----', mod)
   let v = req(mod);
   if (v && v.default) {
     v = v.default;

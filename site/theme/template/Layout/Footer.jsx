@@ -1,9 +1,9 @@
+/* eslint-disable */
+
 import React from 'react';
-import { FormattedMessage, injectIntl } from 'react-intl';
-import { Modal, message, Row, Col, Icon } from 'antd';
-import { Link } from 'bisheng/router';
-import { isLocalStorageNameSupported, loadScript, getLocalizedPathname } from '../utils';
-import ColorPicker from '../Color/ColorPicker';
+import { FormattedMessage, injectIntl } from 'react-intl'; // eslint-disable-line
+import { Modal, message, Row, Col, Icon } from 'antd'; // eslint-disable-line
+import { isLocalStorageNameSupported, loadScript, getLocalizedPathname } from '../utils'; // eslint-disable-line
 
 class Footer extends React.Component {
   constructor(props) {
@@ -100,8 +100,6 @@ class Footer extends React.Component {
 
   render() {
     const { intl = {} } = this.props;
-    const { color } = this.state;
-    const isZhCN = intl.locale === 'zh-CN';
     return (
       <footer id="footer">
         <div className="bottom-bar">

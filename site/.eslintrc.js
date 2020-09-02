@@ -7,5 +7,5 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'react/no-danger': 0,
     'no-param-reassign': 0,    
-  }
+  },
 }

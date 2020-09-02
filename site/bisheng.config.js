@@ -1,6 +1,7 @@
 const path = require('path');
 const CSSSplitWebpackPlugin = require('css-split-webpack-plugin').default;
 const replaceLib = require('antd-tools/lib/replaceLib');
+
 const isDev = process.env.NODE_ENV === 'development';
 const usePreact = process.env.REACT_ENV === 'preact';
 
@@ -98,6 +99,7 @@ module.exports = {
       'zfd': path.join(process.cwd(), 'index'),
       'site': path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',
+      'react': 'react',
     };
     // eslint-disable-next-line
     config.externals = {
@@ -109,7 +111,7 @@ module.exports = {
         react: 'preact-compat',
         'react-dom': 'preact-compat',
         'create-react-class': 'preact-compat/lib/create-react-class',
-        'react-rotuer': 'react-router'
+        'react-rotuer': 'react-router',
       })
     }
     if (isDev) {

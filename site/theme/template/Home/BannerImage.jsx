@@ -21,7 +21,7 @@ const animate = {
     path: { x: p, y: p },
     duration: 5000,
     repeat: -1,
-    ease: TweenOne.easing.path(easePath, { lengthPixel: 400 })
+    ease: TweenOne.easing.path(easePath, { lengthPixel: 400 }),
   },
   rotate: {
     ...loop,
@@ -53,7 +53,7 @@ const animate = {
     ...loop,
     y: -15,
     duration: 3000,
-  }
+  },
 }
 
 function TweenOneG(props) {
