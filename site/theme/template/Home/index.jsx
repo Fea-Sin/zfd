@@ -68,7 +68,7 @@ class Home extends React.Component {
   render() {
     const { isMobile, intl } = this.context;
     const childProps = { ...this.props, isMobile, locale: intl.locale }
-    console.log('传入props', childProps)
+    // console.log('传入props', childProps)
 
     return (
       <DocumentTitle title={`Zf Design - ${intl.formatMessage({ id: 'app.home.slogan' })}`}>

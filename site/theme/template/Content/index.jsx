@@ -13,7 +13,7 @@ export default collect(async nextProps => {
     ? nextProps.data.changelog.CHANGELOG
     : nextProps.utils.get(nextProps.data, pageDataPath);
   
-  console.log('传入参数', nextProps)
+  // console.log('传入参数', nextProps)
   
   if (!pageData) {
     throw 404; // eslint-disable-line no-throw-literal
