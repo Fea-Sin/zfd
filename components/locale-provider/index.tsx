@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import * as moment from 'moment';
 import interopDefault from '../_util/interopDefault';
-import { changeConfirmLocale } from '../modal/locale';
+// import { changeConfirmLocale } from '../modal/locale';
 
 export interface Locale {
   locale: string;
@@ -57,7 +57,7 @@ export default class LocaleProvider extends React.Component<LocaleProviderProps,
     // changeConfirmLocale(locale && locale.Modal)
   }
   componentWillUnmount() {
-    changeConfirmLocale();
+    // changeConfirmLocale();
   }
 
   render() {
