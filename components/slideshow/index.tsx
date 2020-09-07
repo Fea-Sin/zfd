@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import Animate from 'rc-animate';
-import CSSMotion from 'rc-animate/lib/CSSMotion';
+import velocity from 'velocity-animate';
 import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
 import Icon from '../icon';
 
@@ -11,6 +11,8 @@ export interface SlideShowProps {
   customizePrefixCls?: string;
   open?: boolean;
   onChange: () => void;
+  onEnd?: (exists: boolean) => void;
+  duration?: number;
 }
 
 export interface SlideShowState {}
@@ -24,7 +26,60 @@ export default class SlideShow extends React.Component<SlideShowProps, SlideShow
       onChange();
     }
   };
-  onCollapse = () => ({ height: 0 });
+  animateEnter = (node, done) => {
+    const { duration } = this.props;
+    let ok = false;
+
+    function complete() {
+      if (!ok) {
+        ok = true;
+        done();
+      }
+    }
+
+    node.style.display = 'none';
+
+    velocity(node, 'slideDown', {
+      duration: duration || 500,
+      complete,
+    });
+    return {
+      stop() {
+        velocity(node, 'finish');
+        complete();
+      },
+    };
+  };
+  animateLeave = (node, done) => {
+    const { duration } = this.props;
+    let ok = false;
+
+    function complete() {
+      if (!ok) {
+        ok = true;
+        done();
+      }
+    }
+
+    node.style.display = 'block';
+
+    velocity(node, 'slideUp', {
+      duration: duration || 500,
+      complete,
+    });
+    return {
+      stop() {
+        velocity(node, 'finish');
+        complete();
+      },
+    };
+  };
+  handleEnd = (_, exists) => {
+    const { onEnd } = this.props;
+    if (onEnd) {
+      onEnd(exists);
+    }
+  };
 
   componentDidMount() {}
 
@@ -35,6 +90,10 @@ export default class SlideShow extends React.Component<SlideShowProps, SlideShow
     const slideshowCls = classNames(prefixCls, {
       [`${prefixCls}-open`]: !!open,
     });
+    const anim = {
+      enter: this.animateEnter,
+      leave: this.animateLeave,
+    };
 
     return (
       <div className={slideshowCls}>
@@ -44,19 +103,15 @@ export default class SlideShow extends React.Component<SlideShowProps, SlideShow
             {open ? <Icon type="caret-up" /> : <Icon type="caret-down" />}
           </div>
         </div>
-        <CSSMotion
-          visible={open}
-          motionName={`${prefixCls}-transition`}
-          onAppearStart={this.onCollapse}
-          onEnterStart={this.onCollapse}
-          onLeaveActive={this.onCollapse}
-        >
-          {({ style, className }, ref) => (
-            <div className={classNames(`${prefixCls}-content`, className)} style={style}>
-              <div>{children}</div>
-            </div>
-          )}
-        </CSSMotion>
+        <Animate component="" showProp="data-show" animation={anim} onEnd={this.handleEnd}>
+          <div
+            data-show={open}
+            className={classNames(`${prefixCls}-content`)}
+            style={{ display: open ? 'block' : 'none' }}
+          >
+            {children}
+          </div>
+        </Animate>
       </div>
     );
   };

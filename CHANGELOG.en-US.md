@@ -13,6 +13,14 @@ timeline: true
 - Monthly release: minor version at the end of every month for new features.
 - Major version release is not included in this schedule for breaking change and new features.
 
+## 0.0.8
+
+slideshow component optimize
+
+## 0.0.7
+
+add slideshow compoent
+
 ## 0.0.6
 
 add Icon Component
