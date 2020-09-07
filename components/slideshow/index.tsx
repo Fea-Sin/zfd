@@ -1,6 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import Animate from 'rc-animate';
+import CSSMotion from 'rc-animate/lib/CSSMotion';
 import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
 import Icon from '../icon';
 
@@ -23,6 +24,9 @@ export default class SlideShow extends React.Component<SlideShowProps, SlideShow
       onChange();
     }
   };
+  onCollapse = () => ({ height: 0 });
+
+  componentDidMount() {}
 
   renderSlideShow = ({ getPrefixCls }: ConfigConsumerProps) => {
     const { customizePrefixCls, children, title, open } = this.props;
@@ -40,9 +44,19 @@ export default class SlideShow extends React.Component<SlideShowProps, SlideShow
             {open ? <Icon type="caret-up" /> : <Icon type="caret-down" />}
           </div>
         </div>
-        <div className={`${prefixCls}-content`}>
-          <div>{open && children}</div>
-        </div>
+        <CSSMotion
+          visible={open}
+          motionName={`${prefixCls}-transition`}
+          onAppearStart={this.onCollapse}
+          onEnterStart={this.onCollapse}
+          onLeaveActive={this.onCollapse}
+        >
+          {({ style, className }, ref) => (
+            <div className={classNames(`${prefixCls}-content`, className)} style={style}>
+              <div>{children}</div>
+            </div>
+          )}
+        </CSSMotion>
       </div>
     );
   };

@@ -66,10 +66,10 @@ ReactDOM.render(
     color: #3E7AFA;
   }
   .zf-demo-slideshow-content {
-    width: 500px;
     height: 300px;
     border: 1px solid green;
     padding: 20px;
+    /* background: red; */
   }
   .zf-demo-slideshow-operate {
     padding: 20px;

@@ -18,9 +18,6 @@ ZF Design which is specially created for internal desktop applications, is commi
 
 We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.
 
-- [Principles](/docs/spec/proximity)
-- [Patterns](/docs/spec/overview)
-- [Resource Download](/docs/spec/download)
 - [Sketch Tools](http://kitchen.alipay.com/)
 
 ## Front-end Implementation

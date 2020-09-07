@@ -18,9 +18,7 @@ title: 介绍
 
 我们提供完善的设计原则、最佳实践和设计资源文件（Sketch 和 Axure），来帮助企业快速设计出高质量的产品原型。
 
-- [设计原则](/docs/spec/proximity)
-- [设计模式](/docs/spec/overview)
-- [设计资源](/docs/spec/download)
+
 - [Sketch 工具集](http://kitchen.alipay.com/)
 
 ## 前端实现
