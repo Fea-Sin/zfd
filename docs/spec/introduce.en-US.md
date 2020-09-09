@@ -12,12 +12,3 @@ In the process of internal desktop applications development, many different desi
 
 ZF Design which is specially created for internal desktop applications, is committed to improving the experience of users and product designers. User interface designers and user experience designers, collectively, are considered as product designers, and the boundaries of product managers, interaction designers, visual designers, front-end developers and develop engineers are blurred. Taking advantage of unitary specifications, ZF Design makes design and prototype more simple and accessible for all project members, which comprehensively  promotes experience and development efficiency of background applications and products.
 
----
-
-## Guidelines and Resources
-
-We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.
-
-- [Sketch Tools](http://kitchen.alipay.com/)
-
-## Front-end Implementation

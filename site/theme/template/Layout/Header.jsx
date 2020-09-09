@@ -149,15 +149,15 @@ export default class Header extends React.Component {
     });
 
     const menu = [
-      <Button
-        ghost
-        size="small"
-        onClick={this.handleLangChange}
-        className="header-lang-button"
-        key="lang-button"
-      >
-        <FormattedMessage id="app.header.lang" />
-      </Button>,
+      // <Button
+      //   ghost
+      //   size="small"
+      //   onClick={this.handleLangChange}
+      //   className="header-lang-button"
+      //   key="lang-button"
+      // >
+      //   <FormattedMessage id="app.header.lang" />
+      // </Button>,
       <div className="version" key="version">
         <Select
           key="version"
@@ -242,7 +242,7 @@ export default class Header extends React.Component {
 
     const searchPlaceholder = locale === 'zh-CN' ? '在 zf.design 中搜索' : 'Search in zf.design';
     return (
-      <header id="header" className={headerClassName}>
+      <header id="header" className={headerClassName} style={{paddingRight: 30}}>
         {isMobile && (
           <Popover
             overlayClassName="popover-menu"

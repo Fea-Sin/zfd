@@ -26,7 +26,8 @@ if (typeof window !== 'undefined') {
   // Expose to iframe
   window.react = React;
   window['react-dom'] = ReactDOM;
-  window.antd = require('antd');
+  // window.antd = require('antd');
+  window.zfd = require('zfd');
   /* eslint-enable global-require */
 
   // Error log statistic
@@ -73,37 +74,6 @@ export default class Layout extends React.Component {
   getChildContext() {
     const { isMobile: mobile } = this.state;
     return { isMobile: mobile };
-  }
-
-  componentDidMount() {
-    const { router } = this.context;
-    router.listen(loc => {
-      if (typeof window.ga !== 'undefined') {
-        window.ga('send', 'pageview', loc.pathname + loc.search);
-      }
-      // eslint-disable-next-line
-      if (typeof window._hmt !== 'undefined') {
-        // eslint-disable-next-line
-        window._hmt.push(['_trackPageview', loc.pathname + loc.search]);
-      }
-    });
-
-    const nprogressHiddenStyle = document.getElementById('nprogress-style');
-    if (nprogressHiddenStyle) {
-      this.timer = setTimeout(() => {
-        nprogressHiddenStyle.parentNode.removeChild(nprogressHiddenStyle);
-      }, 0);
-    }
-
-    enquireScreen(b => {
-      this.setState({
-        isMobile: !!b,
-      });
-    });
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.timer);
   }
 
   render() {
