@@ -27,8 +27,7 @@ if (typeof window !== 'undefined') {
   window.react = React;
   window['react-dom'] = ReactDOM;
   // window.antd = require('antd');
-  window.zfd = require('zfd');
-  /* eslint-enable global-require */
+  window.zfd = require('zfd'); // eslint-disable-line
 
   // Error log statistic
   window.addEventListener('error', function onError(e) {

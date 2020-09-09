@@ -1,15 +1,18 @@
 ---
-order: 0
+order: 1
 title:
-  zh-CN: 基本
-  en-US: Basic
+  zh-CN: 外部数据控制展开收起
+  en-US: Visible Case
 ---
 
 ## zh-CN
 
-简单使用，展示信息
+外部数据控制展开收起
 
 ## en-US
+
+visible case
+
 
 ````jsx
 import { SlideShow, Icon } from 'zfd'; // eslint-disable-line
@@ -17,18 +20,42 @@ import { SlideShow, Icon } from 'zfd'; // eslint-disable-line
 const title = <div className='zf-demo-slideshow-title'>特殊检查</div>
 
 class Basic extends React.Component {
+
+  state = {
+    slideOpen: false,
+  }
+
+  handleClick = () => {
+    this.setState({
+      slideOpen: !this.state.slideOpen,
+    })
+  }
+
+  operateClick = () => {
+    this.setState({
+      slideOpen: !this.state.slideOpen,
+    })
+  }
   
   handleEnd = (val) => {
     console.log('动画执行----', val)
   }
 
   render() {
+    const { slideOpen } = this.state
+
     return (
       <div>
+        <div className='zf-demo-slideshow-operate'>
+          <div onClick={this.operateClick}>外部操作</div>
+        </div>
         <SlideShow
           title={title}
+          visible={slideOpen}
+          onChange={this.handleClick}
           onEnd={this.handleEnd}
           duration={300}
+          icon={<Icon type="caret-up" style={{color: '#3E7AFA'}} />}
         >
           <div className='zf-demo-slideshow-content'>
             <div>这是内容</div>
@@ -74,4 +101,3 @@ ReactDOM.render(
     color: white;
   }
 </style>
-

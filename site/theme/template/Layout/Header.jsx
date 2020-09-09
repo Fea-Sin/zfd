@@ -16,7 +16,7 @@ import Popover from 'antd/es/popover';
 import 'antd/es/popover/style';
 import Input from 'antd/es/input';
 import 'antd/es/input/style';
-import Button from 'antd/es/button';
+// import Button from 'antd/es/button';
 import { version as antdVersion } from '../../../../package.json';
 import * as utils from '../utils';
 import Santa from './Santa';

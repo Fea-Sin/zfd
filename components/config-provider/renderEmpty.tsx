@@ -14,7 +14,7 @@ const renderEmpty = (componentName?: string): React.ReactNode => (
         case 'TreeSelect':
         case 'Casecader':
         case 'Transfer':
-          return <div className={`${prefix}-small`}></div>;
+          return <div className={`${prefix}-small`} />;
         default:
           return '暂无数据';
       }
